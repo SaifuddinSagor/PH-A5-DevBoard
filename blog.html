@@ -1,0 +1,110 @@
+<!--  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-6">
+    <main>
+        <div class="max-w-7xl mx-auto bg-white p-6 rounded-lg shadow-md ">
+
+            <!-- Header -->
+            <header
+                class="flex  justify-between bg-[#F4F7FF] items-center mb-6 p-4 max-w-7xl mx-auto rounded-lg shadow-md">
+                <div class="flex items-center space-x-2">
+                    <div class="bg-blue-600 text-white p-2 rounded-lg">
+                        <span class="font-bold text-lg">D</span>
+                    </div>
+                    <h1 class="text-2xl font-bold text-gray-800">Dev<span class="text-blue-600">Board</span></h1>
+                </div>
+                <a href="index.html">
+                    <button class="bg-blue-600 text-white px-3 w-[110px] h-[30px] py-1 rounded-xl text-sm mt-2 "
+                        data-task-id="1">Back to Desk</button>
+                </a>
+            </header>
+
+            <!--  -->
+            <h1 class="text-xl font-bold text-center mb-5">Blog</h1>
+
+            <!-- question -->
+            <!-- 1 -->
+            <div class=" justify-between bg-[#F4F7FF] items-center mb-6 p-4 max-w-7xl mx-auto rounded-lg shadow-md">
+                <h1 class="font-bold text-2xl mb-2">Question-1: What are the different ways to select an element in the
+                    DOM?</h1>
+                <p>
+                    <span class="font-semibold"> I consider a DOM element "hard to be selected" if it fills 5
+                        terms:</span> <br>
+
+                    1.It doesn't have any identifiers whatsoever (ID's, Classes or unique attributes). <br>
+
+                    2.Its Xpath is created dynamically in each server creation of a webpage. <br>
+
+                    3.It's one of many elements of the same tag (say, div), and the number of these is also dynamic, so
+                    a
+                    specific item reference like document.querySelector('div'), will be principally ineffective. <br>
+
+                    4.It is a bit frustrating to target by the HTML alone given that the road from a parent element with
+                    an ID is quite large (like 25-30 elements). It's also impossible in case the ID is created
+                    dynamically. <br>
+
+                    5.Other elements share the same textContent of the element (though these will appear on viewport
+                    only
+                    if you'll open accordions that contain them).
+                </p>
+            </div>
+            <!-- 2 -->
+            <div class=" justify-between bg-[#F4F7FF] items-center mb-6 p-4 max-w-7xl mx-auto rounded-lg shadow-md">
+                <h1 class="font-bold text-2xl mb-2">Question-2: What is the difference between innerHTML, innerText, and
+                    textContent ?</h1>
+                <p>
+                    1.textContents: textContents is all text contained by an element and all its children that are for
+                    formatting
+                    purposes only. <br>
+                    2.innerText: innerText returns all text contained by an element and all its child elements. <br>
+                    3.innerHtml: innerHtml returns all text, including html tags, that is contained by an element.
+                </p>
+            </div>
+            <!-- 3 -->
+            <div class=" justify-between bg-[#F4F7FF] items-center mb-6 p-4 max-w-7xl mx-auto rounded-lg shadow-md">
+                <h1 class="font-bold text-2xl mb-2">Question-3: What is event delegation in the DOM?</h1>
+                <p>
+                    Event delegation in the DOM is a JavaScript technique that uses a single event listener to handle
+                    events for multiple child elements. It's a design pattern that takes advantage of event propagation.
+                </p>
+                <p>
+                    <span class="font-semibold mt-2">How does event delegation work?</span><br>
+                    .When an event occurs on a child element, it bubbles up the DOM tree. <br>
+                    .The parent element's event listener handles the event based on the target element. <br>
+                    .The parent element handles the event for all of its child elements. <br>
+
+                </p>
+            </div>
+            <!-- 4 -->
+            <div class=" justify-between bg-[#F4F7FF] items-center mb-6 p-4 max-w-7xl mx-auto rounded-lg shadow-md">
+                <h1 class="font-bold text-2xl mb-2">Question-4: What is event bubbling in the DOM?</h1>
+                <p>Bubbling in the DOM is an event propagation method. It starts with an event triggering on the
+                    innermost element and then proceeds to trigger the same event on its parent element and then its
+                    parent's parent element and so on.</p>
+            </div>
+            <!-- 5 -->
+            <div class=" justify-between bg-[#F4F7FF] items-center mb-6 p-4 max-w-7xl mx-auto rounded-lg shadow-md">
+                <h1 class="font-bold text-2xl mb-2">Question-5: How do you create, add, and remove elements using
+                    JavaScript?</h1>
+                <p>
+                    To add, remove, and modify HTML elements using JavaScript, you can use methods like createElement ,
+                    appendChild , removeChild , and properties like innerHTML and textContent . For example, to add an
+                    element, you can create it using document. createElement and then append it to a parent element
+                    using appendChild .
+                </p>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>
