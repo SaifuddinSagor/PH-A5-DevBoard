@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-6">
+    <main>
+        <div class="max-w-7xl mx-auto bg-white p-6 rounded-lg shadow-md ">
+            <!-- Header -->
+            <header
+                class="flex  justify-between bg-[#F4F7FF] items-center mb-6 p-4 max-w-7xl mx-auto rounded-lg shadow-md">
+                <div class="flex items-center space-x-2">
+                    <div class="bg-blue-600 text-white p-2 rounded-lg">
+                        <span class="font-bold text-lg">D</span>
+                    </div>
+                    <h1 class="text-2xl font-bold text-gray-800">Dev<span class="text-blue-600">Board</span></h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full font-semibold">
+                        <div class="flex gap-2">
+                            <h1>✅</h1>
+                            <button id="headerCounter"> 23</button>
+                        </div>
+
+                    </div>
+                    <div id="changeBgDiv" class="cursor-pointer">
+                        <img src="image/Group 8.png" alt="Click to Change Background">
+                    </div>
+
+                </div>
+            </header>
+
+
+
+            <!-- Main Content -->
+            <div class="flex gap-6">
+                <div class="w-11/12">
+                    <div class="flex justify-between gap-6 h-[120px]   rounded-lg mb-4">
+                        <div class="flex items-center justify-center  bg-[#F4F7FF] flex-1 rounded-lg p-4">
+                            <div class="flex items-center ">
+                                <div>
+                                    <img src="image/Group 13.png" alt="">
+                                </div>
+                                <div>
+                                    <h3>Task Assigned </h3>
+                                    <button id="taskCounter" class="font-bold text-xl">06</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- new blog -->
+                        <a href="blog.html">
+                            <div
+                                class="flex items-center justify-center gap-3 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl font-bold p-4 flex-[2]">
+                                <div>
+                                    <img src="image/fi_18577309.png" alt="">
+                                </div>
+                                <h1 class="text-white font-bold text-xl">
+                                    Discover Something New Today!
+                                </h1>
+                            </div>
+                        </a>
+
+                        <div class="flex items-center justify-center gap-3 bg-[#F4F7FF] flex-1 rounded-lg p-4">
+                            <div>
+                                <img src="image/Group 14.png" alt="">
+                            </div>
+                            <h3> <span id="currentDate" class="font-semibold"></span></h3>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Task List -->
+
+                    <div class="flex-1 grid grid-cols-3 gap-6">
+                        <!-- 01 -->
+                        <div class="bg-[#F4F7FF] p-4 rounded-lg shadow-md">
+                            <div class="bg-white w-2/5 rounded-lg mb-2">
+                                <h1 class="text-sm p-2  text-center text-gray-500">ShopEase</h1>
+                            </div>
+                            <h2 class="text-lg mb-4 font-semibold">Fix Mobile Button Issue</h2>
+                            <p
+                                class="text-gray-600 mb-5 bg-white h-[80px] text-center flex items-center justify-center text-sm rounded-lg shadow-sm">
+                                Debug using Chrome DevTools...
+                            </p>
+
+                            <div class="flex justify-between justify-center items-center">
+                                <div>
+                                    <h3 class="text-sm text-gray-500 mt-2">Deadline </h3>
+                                    <h3 class="text-sm font-semibold mt-2">21 March 2025 </h3>
+                                </div>
+                                <button
+                                    class="bg-blue-600 text-white px-3 w-[110px] h-[30px] py-1 rounded-full text-sm mt-2 completed-btn"
+                                    data-task-id="1">Completed</button>
+                            </div>
+                        </div>
+                        <!-- 02 -->
+                        <div class="bg-[#F4F7FF] p-4 rounded-lg shadow-md">
+                            <div class="bg-white w-2/5 rounded-lg mb-2">
+                                <h1 class="text-sm p-2  text-center text-gray-500">CloudSync</h1>
+                            </div>
+                            <h2 class="text-lg mb-4 font-semibold">Add Dark Mode</h2>
+                            <p
+                                class="text-gray-600 mb-5 bg-white h-[80px] text-center flex items-center justify-center text-sm rounded-lg shadow-sm">
+                                Store the user's preference in localStorage, update CSS variable
+                            </p>
+
+                            <div class="flex justify-between justify-center items-center">
+                                <div>
+                                    <h3 class="text-sm text-gray-500 mt-2">Deadline </h3>
+                                    <h3 class="text-sm font-semibold mt-2">21 March 2025 </h3>
+                                </div>
+                                <button
+                                    class="bg-blue-600 text-white px-3 w-[110px] h-[30px] py-1 rounded-full text-sm mt-2 completed-btn"
+                                    data-task-id="2">Completed</button>
+                            </div>
+                        </div>
+                        <!-- 03 -->
+                        <div class="bg-[#F4F7FF] p-4 rounded-lg shadow-md">
+                            <div class="bg-white w-2/5 rounded-lg mb-2">
+                                <h1 class="text-sm p-2  text-center text-gray-500">SwiftPay</h1>
+                            </div>
+                            <h2 class="text-lg mb-4 font-semibold">Optimize Home page </h2>
+                            <p
+                                class="text-gray-600 mb-5 bg-white h-[80px] text-center flex items-center justify-center text-sm rounded-lg shadow-sm">
+                                Debug using Chrome DevTools...
+                            </p>
+
+                            <div class="flex justify-between justify-center items-center">
+                                <div>
+                                    <h3 class="text-sm text-gray-500 mt-2">Deadline </h3>
+                                    <h3 class="text-sm font-semibold mt-2">21 March 2025 </h3>
+                                </div>
+                                <button
+                                    class="bg-blue-600 text-white px-3 w-[110px] h-[30px] py-1 rounded-full text-sm mt-2 completed-btn"
+                                    data-task-id="3">Completed</button>
+                            </div>
+                        </div>
+                        <!-- 04 -->
+                        <div class="bg-[#F4F7FF] p-4 rounded-lg shadow-md">
+                            <div class="bg-white w-2/5 rounded-lg mb-2">
+                                <h1 class="text-sm p-2  text-center text-gray-500">Meta</h1>
+                            </div>
+                            <h2 class="text-lg mb-4 font-semibold">Add new emoji 🤲</h2>
+                            <p
+                                class="text-gray-600 mb-5 bg-white h-[80px] text-center flex items-center justify-center text-sm rounded-lg shadow-sm">
+                                Debug using Chrome,DevTools ....
+                            </p>
+
+                            <div class="flex justify-between justify-center items-center">
+                                <div>
+                                    <h3 class="text-sm text-gray-500 mt-2">Deadline </h3>
+                                    <h3 class="text-sm font-semibold mt-2">21 March 2025 </h3>
+                                </div>
+                                <button
+                                    class="bg-blue-600 text-white px-3 w-[110px] h-[30px] py-1 rounded-full text-sm mt-2 completed-btn"
+                                    data-task-id="4">Completed</button>
+                            </div>
+                        </div>
+                        <!-- 05 -->
+                        <div class="bg-[#F4F7FF] p-4 rounded-lg shadow-md">
+                            <div class="bg-white w-2/5 rounded-lg mb-2">
+                                <h1 class="text-sm p-2  text-center text-gray-500">Google LLC</h1>
+                            </div>
+                            <h2 class="text-lg mb-4 font-semibold">Integrate OpenAI API </h2>
+                            <p
+                                class="text-gray-600 mb-5 bg-white h-[80px] text-center flex items-center justify-center text-sm rounded-lg shadow-sm">
+                                Debug using Chrome,DevTools ....
+                            </p>
+
+                            <div class="flex justify-between justify-center items-center">
+                                <div>
+                                    <h3 class="text-sm text-gray-500 mt-2">Deadline </h3>
+                                    <h3 class="text-sm font-semibold mt-2">21 March 2025 </h3>
+                                </div>
+                                <button
+                                    class="bg-blue-600 text-white px-3 w-[110px] h-[30px] py-1 rounded-full text-sm mt-2 completed-btn"
+                                    data-task-id="5">Completed</button>
+                            </div>
+                        </div>
+                        <!-- 06 -->
+                        <div class="bg-[#F4F7FF] p-4 rounded-lg shadow-md">
+                            <div class="bg-white w-2/5 rounded-lg mb-2">
+                                <h1 class="text-sm p-2  text-center text-gray-500">Glassdoar</h1>
+                            </div>
+                            <h2 class="text-lg mb-4 font-semibold">Improve Job searching </h2>
+                            <p
+                                class="text-gray-600 mb-5 bg-white h-[80px] text-center flex items-center justify-center text-sm rounded-lg shadow-sm">
+                                Debug using Chrome DevTools...
+                            </p>
+
+                            <div class="flex justify-between justify-center items-center">
+                                <div>
+                                    <h3 class="text-sm text-gray-500 mt-2">Deadline </h3>
+                                    <h3 class="text-sm font-semibold mt-2">21 March 2025 </h3>
+                                </div>
+                                <button
+                                    class="bg-blue-600 text-white px-3 w-[110px] h-[30px] py-1 rounded-full text-sm mt-2 completed-btn"
+                                    data-task-id="6">Completed</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Activity Log Section -->
+                <div class="bg-white p-4 rounded-lg shadow-md mt-6">
+                    <div class="flex gap-2 justify-center items-center">
+                        <div>
+                            <img src="image/fi-sr-time-past.png" alt="">
+                        </div>
+                        <div>
+                            <button class="text-lg font-semibold activity-log">Activity Log</button>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center mt-3">
+                        <button id="clearHistory" class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">Clear
+                            History</button>
+                    </div>
+                    <div id="activityContainer" class="mt-3 bg-gray-50 p-3 rounded-lg shadow-sm"></div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </main>
+
+    <script src="javaScript/java.js"></script>
+</body>
+
+</html>
